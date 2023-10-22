@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 net = cv2.dnn.readNet('yolov5s.onnx')
-# String list that corresponds to the ID (0-79)
+# String list 
 
 with open("classes.txt") as f:
     classes = [s.strip() for s in f.readlines()]
@@ -76,8 +76,7 @@ def thisIsTrash(class_ids):
             break
         
     return trash
-    
-    
+       
     
 if __name__=="__main__": 
     main()
