@@ -14,7 +14,7 @@ def main():
         if not res: 
             continue
         process_frame(frame)
-        cv2.imshow("Yolov5s", frame)
+        cv2.imshow("Is this Trash??", frame)
         if cv2.waitKey(1) == ord('q'):
             break
     cap.release()
